@@ -12,7 +12,7 @@ export default function Challenge3() {
     WebViewer(
       {
         path: "/lib",
-        initialDoc: "./src/assets/ssn-table.pdf",
+        initialDoc: "./src/assets/invoice.pdf",
         licenseKey: import.meta.env.VITE_APRYSE_LICENSE_KEY,
       },
       viewerRef.current
@@ -32,7 +32,7 @@ export default function Challenge3() {
       const topHeader = instance.UI.getModularHeader("default-top-header");
       topHeader.setItems([logo, ...topHeader.getItems()]);
 
-      // use search + regex to find and redact SSNs from pdf
+      // enable redaction
     });
   }, []);
 
